@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Path untuk direktori cache internal aplikasi. -->
+    <!-- 'name' bisa diisi apa saja, ini hanya label internal. -->
+    <!-- 'path'="." berarti root dari direktori cache yang ditentukan oleh <cache-path>. -->
+    <cache-path name="my_images" path="." />
+
+    <!--
+        CATATAN TAMBAHAN:
+        Anda bisa menambahkan path lain di sini jika diperlukan oleh fitur lain.
+        Contoh:
+
+        Jika Anda ingin menyimpan ke direktori file internal aplikasi (bukan cache):
+        <files-path name="my_internal_files" path="images/" />
+        Ini akan merujuk ke Context.getFilesDir() + "/images/"
+
+        Jika Anda memutuskan untuk menggunakan penyimpanan eksternal yang dikelola aplikasi
+        (misalnya, Context.getExternalFilesDir(Environment.DIRECTORY_PICTURES)):
+        <external-files-path name="my_external_pictures" path="Pictures" />
+
+        Jika Anda memutuskan untuk menggunakan direktori cache eksternal yang dikelola aplikasi:
+        <external-cache-path name="my_external_cache" path="." />
+
+        Untuk kasus penggunaan kita dengan createImageFileUri menggunakan context.cacheDir,
+        <cache-path name="my_images" path="." /> adalah yang paling sesuai dan paling sederhana.
+    -->
+</paths>
